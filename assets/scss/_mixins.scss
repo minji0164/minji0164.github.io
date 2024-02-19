@@ -110,6 +110,12 @@
   font-size: 128px;
 }
 
+@mixin tit {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 52px;
+}
+
 @mixin sub-tit {
   font-family: "Pretendard";
   font-weight: 700;

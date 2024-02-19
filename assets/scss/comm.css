@@ -390,12 +390,12 @@ legend {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 46%;
-  left: 70%;
+  left: 69%;
   color: #fff;
 }
 .sec-visu .scroll-downs {
   position: absolute;
-  top: 80%;
+  top: 85%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -451,7 +451,6 @@ legend {
 }
 .sec-about .about-slide {
   padding-top: 126px;
-  overflow: visible;
 }
 .sec-about .swiper-slide {
   text-align: center;
@@ -463,200 +462,4 @@ legend {
 }
 .sec-about .content {
   padding-top: 142px;
-}
-.sec-about .con1 {
-  font-family: "Pretendard";
-  font-weight: 700;
-  font-size: 22px;
-  color: #006d31;
-}
-.sec-about .con2 {
-  padding-top: 15px;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.sec-orion {
-  background: #f9f9f9;
-}
-.sec-orion .inner {
-  padding: 80px 0;
-}
-.sec-orion .box {
-  padding: 50px;
-  display: flex;
-  gap: 50px;
-  width: 1280px;
-  height: 740px;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.04);
-}
-.sec-orion .page-img {
-  width: 726px;
-  height: 640px;
-  border-radius: 20px;
-  background: #000;
-}
-.sec-orion .txt-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 60px;
-  width: 404px;
-  height: 640px;
-}
-.sec-orion .lg-img {
-  width: 230px;
-  height: auto;
-}
-.sec-orion .exp {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.sec-orion .exp .exp-list {
-  display: flex;
-  gap: 20px;
-}
-.sec-orion .exp .bold {
-  display: block;
-  width: 74px;
-  font-weight: 700;
-}
-.sec-orion .btn-wrap {
-  display: flex;
-  gap: 20px;
-}
-.sec-orion .btn-wrap .btn-goto {
-  width: 60px;
-  height: 60px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-}
-.sec-orion .btn-wrap .fa-brands,
-.sec-orion .btn-wrap .ar-new {
-  font-size: 25px;
-}
-
-.sec-knb {
-  background: #f9f9f9;
-}
-.sec-knb .inner {
-  padding: 80px 0;
-}
-.sec-knb .box {
-  padding: 50px;
-  display: flex;
-  gap: 50px;
-  width: 1280px;
-  height: 740px;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.04);
-}
-.sec-knb .page-img {
-  width: 726px;
-  height: 640px;
-  border-radius: 20px;
-  background: #000;
-}
-.sec-knb .txt-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 60px;
-  width: 404px;
-  height: 640px;
-}
-.sec-knb .lg-img {
-  width: 230px;
-  height: auto;
-}
-.sec-knb .exp {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.sec-knb .exp .exp-list {
-  display: flex;
-  gap: 20px;
-}
-.sec-knb .exp .bold {
-  display: block;
-  width: 74px;
-  font-weight: 700;
-}
-.sec-knb .btn-wrap {
-  display: flex;
-  gap: 20px;
-}
-.sec-knb .btn-wrap .btn-goto {
-  width: 60px;
-  height: 60px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-}
-.sec-knb .btn-wrap .fa-brands,
-.sec-knb .btn-wrap .ar-new {
-  font-size: 25px;
-}
-
-.sec-sk .inner {
-  padding: 150px 0 0;
-}
-.sec-sk .tit {
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: 52px;
-  text-align: center;
-}
-.sec-sk .sk-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding-top: 140px;
-}
-.sec-sk .sk {
-  display: flex;
-  gap: 20px;
-}
-.sec-sk .sk-list {
-  width: 150px;
-  height: 150px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-}
-
-.sec-call {
-  background: #000;
-}
-.sec-call .inner {
-  display: flex;
-  align-items: center;
-}
-.sec-call .call {
-  display: flex;
-  gap: 115px;
-}
-.sec-call .call-list {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background: #fff;
-}
-.sec-call .fa-solid,
-.sec-call .fa-brands {
-  font-size: 120px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.sec-call .fa-github {
-  position: relative;
-}
-.sec-call .ar-new {
-  position: absolute;
 }/*# sourceMappingURL=comm.css.map */
