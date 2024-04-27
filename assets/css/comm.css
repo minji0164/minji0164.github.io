@@ -136,7 +136,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   font-family: "pretendard", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
-  color: #212126;
+  color: #0e0e0e;
 }
 
 /* desktop */
@@ -353,18 +353,6 @@ legend {
 .intro .big-tit #inner-text {
   position: relative;
   z-index: 1;
-}
-.intro .big-tit #inner-text.done-animating {
-  animation: done-animating 200ms ease-in;
-}
-.intro .big-tit .letter {
-  display: inline-block;
-  font-size: 140px;
-  letter-spacing: 5px;
-}
-.intro .big-tit .letter.animate {
-  animation: dash 500ms ease-in forwards;
-  opacity: 0;
 }
 .intro .img-box {
   display: flex;

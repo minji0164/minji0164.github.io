@@ -46,21 +46,6 @@
       position: relative;
       z-index: 1;
     }
-
-    #inner-text.done-animating {
-      animation: done-animating 200ms ease-in;
-    }
-
-    .letter {
-      display: inline-block;
-      font-size: 140px;
-      letter-spacing: 5px;
-    }
-
-    .letter.animate {
-      animation: dash 500ms ease-in forwards;
-      opacity: 0;
-    }
   }
 
   .img-box {
