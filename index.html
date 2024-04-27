@@ -4,271 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>강민지 포트폴리오</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="./assets/css/comm.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/comm.js"></script>
   </head>
   <body>
     <div class="wrap">
-      <header id="header">
-        <div class="inner">
-          <div class="hd-wrap">
-            <a href="#" class="logo">GUMING</a>
-            <div class="col-right">
-              <a href="#">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="#">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
       <main id="main">
-        <section class="sec sec-visu">
-          <div class="inner">
-            <div class="txt-wrap">
-              <span class="visu-tit growing">GROWING</span>
-              <span class="visu-tit web">WEB PUBLISHERS</span>
-            </div>
-            <p class="content">꾸준히 성장하는 웹 퍼블리셔, 강민지입니다.</p>
-            <div class="scroll-downs">
-              <div class="mousey">
-                <div class="scroller"></div>
+        <section class="intro">
+          <div class="tit-wr">
+            <span class="hi">HELLO, I AM MINJI</span>
+            <strong class="big-tit">
+              <div id="text-spot">
+                <div id="inner-text"></div>
+                <form id="custom-text-form"></form>
               </div>
-            </div>
+              <div class="img-box">
+                <img
+                  src="./images/main/KakaoTalk_20240327_213901975.png"
+                  alt="아바타"
+                />
+              </div>
+            </strong>
           </div>
-        </section>
-        <section class="sec sec-about">
-          <div class="inner">
-            <p class="sub-tit-wrap">
-              <span class="sub-tit">
-                직관적이고 깔끔한 UI로 원활한 사용자 경험을 제공하고
-              </span>
-              <span class="sub-tit">
-                사용자의 기억에 남을 수 있는 웹을 목표합니다.
-              </span>
+          <div class="txt-wr">
+            <p class="txt">
+              소통하고 도우며 함께하는 가치를 실현하는 웹 퍼블리셔 강민지입니다.
+              공동의 목표를 달성하기 위해 끊임 없는 도전을 거듭하며, 실패와
+              성공을 통해 더 나은 방향을 모색하면서 성장하는 것을 즐깁니다. 이를
+              바탕으로 함께하는 이들과 더 큰 성과를 이루는 것이 제 목표입니다.
             </p>
-            <div class="swiper about-slide">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <span class="about-tit">Challenge</span>
-                  <div class="content">
-                    <p class="con1">
-                      망설이지 않고 담대하게 부딪혀보는 도전 정신
-                    </p>
-                    <p class="con2">a spirit of challenge without hesitation</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <span class="about-tit">Together</span>
-                  <div class="content">
-                    <p class="con1">
-                      서로가 돕고 배우며 함께 성장하는 과정의 가치
-                    </p>
-                    <p class="con2">
-                      The value of the process of helping and learning and
-                      growing together
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <span class="about-tit">Curiosity</span>
-                  <div class="content">
-                    <p class="con1">
-                      새로운 기술과 배움에 대한 끊임없는 호기심
-                    </p>
-                    <p class="con2">
-                      a constant curiosity about new skills and learning
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="sec sec-orion">
-          <div class="inner">
-            <div class="box">
-              <div class="page-img"></div>
-              <div class="txt-wrap">
-                <img
-                  class="lg-img"
-                  src="./images/main/orion-lg.png"
-                  alt="orion logo"
-                />
-                <ul class="exp">
-                  <li class="exp-list">
-                    <span class="bold">TYPE</span>
-                    <span class="def">Resposive Web[PC, MOB]</span>
-                  </li>
-                  <li class="exp-list">
-                    <span class="bold">PAGE</span>
-                    <span class="def">main + sub1</span>
-                  </li>
-                  <li class="exp-list">
-                    <span class="bold">기여도</span>
-                    <span class="def">100%(개인 프로젝트)</span>
-                  </li>
-                  <li class="exp-list">
-                    <span class="bold">LIBRARY</span>
-                    <span class="def">swiper, aos, waypoint.js</span>
-                  </li>
-                </ul>
-                <p class="exp-p">
-                  다소 답답해 보였던 기존의 레이아웃 구성에 여백 활용을 늘리면서
-                  페이지의 가시성을 향상시켰습니다. 브랜드 철학 섹션에서는
-                  아이콘을 활용하여 전달력을 높이고 기업 성과를 부각시키기 위해
-                  퍼포먼스 섹션에서는 js 라이브러리를 사용하여 시각적 요소를
-                  더했습니다.
-                </p>
-                <div class="btn-wrap">
-                  <button class="btn-goto">
-                    <span class="material-symbols-rounded ar-new">
-                      open_in_new
-                    </span>
-                  </button>
-                  <button class="btn-goto">
-                    <i class="fa-brands fa-github"></i>
-                  </button>
-                  <button class="btn-goto">
-                    <i class="fa-brands fa-figma"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="sec sec-knb">
-          <div class="inner">
-            <div class="box">
-              <div class="page-img"></div>
-              <div class="txt-wrap">
-                <img
-                  class="lg-img"
-                  src="./images/main/orion-lg.png"
-                  alt="orion logo"
-                />
-                <ul class="exp">
-                  <li class="exp-list">
-                    <span class="bold">TYPE</span>
-                    <span class="def">Resposive Web[PC, TAP, MOB]</span>
-                  </li>
-                  <li class="exp-list">
-                    <span class="bold">PAGE</span>
-                    <span class="def">main + sub1 + sub2</span>
-                  </li>
-                  <li class="exp-list">
-                    <span class="bold">기여도</span>
-                    <span class="def"
-                      >35%(팀 프로젝트 - sub1, footer 작업)</span
-                    >
-                  </li>
-                  <li class="exp-list">
-                    <span class="bold">LIBRARY</span>
-                    <span class="def">aos, hover.css, googlemap api</span>
-                  </li>
-                </ul>
-                <p class="exp-p">
-                  하위 카테고리를 효과적으로 정리하기 위해 소개페이지를
-                  원페이지로 재구성했습니다. 서브 네비게이션을 추가하여 섹션
-                  간의 이동을 간편하게 만들었고, 많은 양의 텍스트를 줄여 정보가
-                  더 잘 읽히도록 재배치했습니다.
-                </p>
-                <div class="btn-wrap">
-                  <button class="btn-goto">
-                    <span class="material-symbols-rounded ar-new">
-                      open_in_new
-                    </span>
-                  </button>
-                  <button class="btn-goto">
-                    <i class="fa-brands fa-github"></i>
-                  </button>
-                  <button class="btn-goto">
-                    <i class="fa-brands fa-figma"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="sec sec-sk">
-          <div class="inner">
-            <h2 class="tit">SKILL</h2>
-            <div class="sk-wrap">
-              <ul class="sk">
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-              </ul>
-              <ul class="sk">
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-                <li class="sk-list">
-                  <img src="" alt="" />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="sec sec-call">
-          <div class="inner">
-            <ul class="call">
-              <li class="call-list">
-                <i class="fa-solid fa-paper-plane"></i>
-              </li>
-              <li class="call-list">
-                <i class="fa-solid fa-phone"></i>
-              </li>
-              <li class="call-list">
-                <a href="#">
-                  <i class="fa-brands fa-github">
-                    <span class="material-symbols-rounded ar-new">
-                      open_in_new
-                    </span>
-                  </i>
-                </a>
-              </li>
-            </ul>
           </div>
         </section>
       </main>

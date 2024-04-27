@@ -98,32 +98,11 @@
   background-color: $bg-color;
 }
 // txt-----------------------------------------------------------------------------
-@mixin logo {
+@mixin hi {
   font-family: "Poppins";
-  font-weight: 700;
-  font-size: 24px;
+  font-size: 46px;
 }
-
 @mixin big-tit {
   font-family: "Poppins";
-  font-weight: 700;
-  font-size: 128px;
-}
-
-@mixin tit {
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: 52px;
-}
-
-@mixin sub-tit {
-  font-family: "Pretendard";
-  font-weight: 700;
-  font-size: 26px;
-}
-
-@mixin sub-tit2 {
-  font-family: "Pretendard";
-  font-weight: 700;
-  font-size: 22px;
+  font-size: 140px;
 }
