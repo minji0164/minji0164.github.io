@@ -6,7 +6,7 @@
 
   .hi {
     opacity: 0;
-    animation: fadeIn 2s forwards;
+    animation: fadeIn 1.5s forwards;
     @include hi;
 
     @keyframes fadeIn {
@@ -33,7 +33,7 @@
       }
 
       60% {
-        transform: skew(10deg, 0deg) translateX(-10px) scale(1.2);
+        transform: skew(10deg, 0deg) translateX(-5px) scale(1);
       }
 
       100% {
@@ -45,6 +45,29 @@
     #inner-text {
       position: relative;
       z-index: 1;
+    }
+
+    #inner-text.done-animating {
+      animation: done-animating 200ms ease-in;
+    }
+
+    #text-spot {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .letter {
+      display: inline-block;
+      font-size: 140px;
+      letter-spacing: 5px;
+    }
+
+    .letter.animate {
+      animation: dash 300ms ease-in forwards;
+      opacity: 0;
     }
   }
 

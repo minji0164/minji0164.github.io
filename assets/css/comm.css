@@ -317,7 +317,7 @@ legend {
 }
 .intro .hi {
   opacity: 0;
-  animation: fadeIn 2s forwards;
+  animation: fadeIn 1.5s forwards;
   font-family: "Poppins";
   font-size: 46px;
 }
@@ -343,7 +343,7 @@ legend {
     transform: skew(10deg, 0deg) translateX(100%) scale(0.9);
   }
   60% {
-    transform: skew(10deg, 0deg) translateX(-10px) scale(1.2);
+    transform: skew(10deg, 0deg) translateX(-5px) scale(1);
   }
   100% {
     transform: translateY(0) scale(1);
@@ -353,6 +353,25 @@ legend {
 .intro .big-tit #inner-text {
   position: relative;
   z-index: 1;
+}
+.intro .big-tit #inner-text.done-animating {
+  animation: done-animating 200ms ease-in;
+}
+.intro .big-tit #text-spot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.intro .big-tit .letter {
+  display: inline-block;
+  font-size: 140px;
+  letter-spacing: 5px;
+}
+.intro .big-tit .letter.animate {
+  animation: dash 300ms ease-in forwards;
+  opacity: 0;
 }
 .intro .img-box {
   display: flex;
