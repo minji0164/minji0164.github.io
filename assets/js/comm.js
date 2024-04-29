@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var span = document.createElement("span");
       span.textContent = letter;
       span.className = "letter animate";
-      span.style["animation-delay"] = 150 * index + "ms";
+      span.style["animation-delay"] = 100 * index + "ms";
       innerTextElement.appendChild(span);
 
       if (index === wordArray.length - 1) {

@@ -1,4 +1,9 @@
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
   .tit-wr {
     display: flex;
     flex-direction: column;
@@ -48,7 +53,7 @@
     }
 
     #inner-text.done-animating {
-      animation: done-animating 200ms ease-in;
+      animation: done-animating 100ms ease-in;
     }
 
     #text-spot {
@@ -81,8 +86,8 @@
     height: 64px;
     background: $white;
     opacity: 0;
-    animation: appear 0.2s ease-in-out 1.5s forwards,
-      moveUpAndDown 0.5s ease-in-out 1.5s forwards;
+    animation: appear 0.2s ease-in-out 1.1s forwards,
+      moveUpAndDown 0.5s ease-in-out 1.1s forwards;
 
     @keyframes appear {
       to {
@@ -104,5 +109,45 @@
     img {
       width: 40px;
     }
+  }
+
+  .txt-wr {
+    display: flex;
+    margin-top: 80px;
+  }
+
+  .txt {
+    width: 450px;
+  }
+
+  .profile {
+    display: flex;
+    margin-left: 400px;
+  }
+
+  .name-wr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .call-wr {
+    margin-left: 64px;
+
+    .icon {
+      font-size: 32px;
+    }
+  }
+
+  .phone,
+  .email {
+    display: flex;
+    align-items: center;
+  }
+
+  .num,
+  .addr {
+    padding-left: 13px;
   }
 }

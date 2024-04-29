@@ -291,6 +291,16 @@ legend {
   background: #f2f2f2;
 }
 
+::-moz-selection {
+  background: #0066ff;
+  color: #fff;
+}
+
+::selection {
+  background: #0066ff;
+  color: #fff;
+}
+
 .inner {
   max-width: 1280px;
   margin: 0 auto;
@@ -308,9 +318,15 @@ legend {
 
 #main {
   height: 100%;
-  margin: 0 5%;
+  padding: 0 5%;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
 .intro .tit-wr {
   display: flex;
   flex-direction: column;
@@ -355,7 +371,7 @@ legend {
   z-index: 1;
 }
 .intro .big-tit #inner-text.done-animating {
-  animation: done-animating 200ms ease-in;
+  animation: done-animating 100ms ease-in;
 }
 .intro .big-tit #text-spot {
   display: flex;
@@ -383,7 +399,7 @@ legend {
   height: 64px;
   background: #fff;
   opacity: 0;
-  animation: appear 0.2s ease-in-out 1.5s forwards, moveUpAndDown 0.5s ease-in-out 1.5s forwards;
+  animation: appear 0.2s ease-in-out 1.1s forwards, moveUpAndDown 0.5s ease-in-out 1.1s forwards;
 }
 @keyframes appear {
   to {
@@ -403,4 +419,36 @@ legend {
 }
 .intro .img-box img {
   width: 40px;
+}
+.intro .txt-wr {
+  display: flex;
+  margin-top: 80px;
+}
+.intro .txt {
+  width: 450px;
+}
+.intro .profile {
+  display: flex;
+  margin-left: 400px;
+}
+.intro .name-wr {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5px;
+}
+.intro .call-wr {
+  margin-left: 64px;
+}
+.intro .call-wr .icon {
+  font-size: 32px;
+}
+.intro .phone,
+.intro .email {
+  display: flex;
+  align-items: center;
+}
+.intro .num,
+.intro .addr {
+  padding-left: 13px;
 }/*# sourceMappingURL=comm.css.map */
