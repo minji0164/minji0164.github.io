@@ -285,7 +285,7 @@ legend {
 .wrap {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   max-width: none;
   margin: 0 auto;
   background: #f2f2f2;
@@ -316,16 +316,15 @@ legend {
   }
 }
 
-#main {
-  height: 100%;
-  padding: 0 5%;
-}
-
-.intro {
+.sec {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
+}
+
+.intro {
+  padding: 0 5%;
 }
 .intro .tit-wr {
   display: flex;
@@ -426,10 +425,24 @@ legend {
 }
 .intro .txt {
   width: 450px;
+  opacity: 0;
+  animation: appear 0.2s ease-in-out 1.6s forwards;
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
 }
 .intro .profile {
   display: flex;
   margin-left: 400px;
+  opacity: 0;
+  animation: appear 0.2s ease-in-out 2s forwards;
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
 }
 .intro .name-wr {
   display: flex;
@@ -451,4 +464,8 @@ legend {
 .intro .num,
 .intro .addr {
   padding-left: 13px;
+}
+
+.ng {
+  background: url("../../images/main/national.jpg") 50% 40%/100% no-repeat;
 }/*# sourceMappingURL=comm.css.map */
