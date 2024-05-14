@@ -6,7 +6,7 @@
 }
 
 .intro {
-  padding: 0 5%;
+  padding: 0 10%;
 
   .tit-wr {
     display: flex;
@@ -29,6 +29,7 @@
   }
 
   .big-tit {
+    // color: $primary;
     display: flex;
     @include big-tit;
     @keyframes dash {
@@ -172,4 +173,14 @@
 
 .ng {
   background: url("../../images/main/national.jpg") 50% 40% / 100% no-repeat;
+
+  .bg {
+    height: 100%;
+    background-color: rgba(255, 204, 0, 0.8);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 204, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
+  }
 }

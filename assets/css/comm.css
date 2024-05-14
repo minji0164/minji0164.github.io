@@ -324,7 +324,7 @@ legend {
 }
 
 .intro {
-  padding: 0 5%;
+  padding: 0 10%;
 }
 .intro .tit-wr {
   display: flex;
@@ -468,4 +468,9 @@ legend {
 
 .ng {
   background: url("../../images/main/national.jpg") 50% 40%/100% no-repeat;
+}
+.ng .bg {
+  height: 100%;
+  background-color: rgba(255, 204, 0, 0.8);
+  background-image: linear-gradient(to right, rgb(255, 204, 0), rgba(0, 0, 0, 0));
 }/*# sourceMappingURL=comm.css.map */
