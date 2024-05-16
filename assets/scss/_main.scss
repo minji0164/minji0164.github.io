@@ -182,5 +182,66 @@
       rgba(255, 204, 0, 1),
       rgba(0, 0, 0, 0)
     );
+    padding: 0 10%;
+  }
+
+  .left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .txt-wr {
+    .type {
+      margin-bottom: 5px;
+    }
+
+    .num {
+      font-weight: 700;
+    }
+    .txt {
+      padding-left: 18px;
+    }
+
+    .name {
+      @include name;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .exp {
+      margin-bottom: 30px;
+      width: 350px;
+    }
+
+    .bold {
+      width: 80px;
+      display: inline-block;
+    }
+  }
+
+  .goto-wr {
+    margin-top: 138px;
+    gap: 20px;
+    display: flex;
+
+    a {
+      width: 60px;
+      height: 60px;
+      background: $white;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // .icon {
+    //   font-weight: 700;
+    // }
+    .fa-brands {
+      font-size: 24px;
+    }
   }
 }
