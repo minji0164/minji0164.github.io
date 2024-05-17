@@ -7,6 +7,7 @@
 
 .intro {
   padding: 0 10%;
+  display: flex;
 
   .tit-wr {
     display: flex;
@@ -134,7 +135,7 @@
 
   .profile {
     display: flex;
-    margin-left: 400px;
+    margin-left: 300px;
     opacity: 0;
     animation: appear 0.2s ease-in-out 2s forwards;
     @keyframes appear {
@@ -168,6 +169,21 @@
   .num,
   .addr {
     padding-left: 13px;
+  }
+
+  nav {
+    @include posY;
+    right: -5%;
+    display: flex;
+    gap: 100px;
+    transform: rotate(90deg);
+    opacity: 0;
+    animation: appear 0.2s ease-in-out 2.3s forwards;
+    @keyframes appear {
+      to {
+        opacity: 1;
+      }
+    }
   }
 }
 

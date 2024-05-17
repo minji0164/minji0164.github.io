@@ -325,6 +325,7 @@ legend {
 
 .intro {
   padding: 0 10%;
+  display: flex;
 }
 .intro .tit-wr {
   display: flex;
@@ -435,7 +436,7 @@ legend {
 }
 .intro .profile {
   display: flex;
-  margin-left: 400px;
+  margin-left: 300px;
   opacity: 0;
   animation: appear 0.2s ease-in-out 2s forwards;
 }
@@ -464,6 +465,22 @@ legend {
 .intro .num,
 .intro .addr {
   padding-left: 13px;
+}
+.intro nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5%;
+  display: flex;
+  gap: 100px;
+  transform: rotate(90deg);
+  opacity: 0;
+  animation: appear 0.2s ease-in-out 2.3s forwards;
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
 }
 
 .ng {
