@@ -493,7 +493,7 @@ legend {
   right: 80px;
   width: 65px;
   opacity: 0;
-  animation: appear 0.2s ease-in-out 2.5s forwards;
+  animation: appear 0.2s ease-in-out 2.3s forwards;
 }
 @keyframes appear {
   to {
