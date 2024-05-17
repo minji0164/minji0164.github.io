@@ -8,180 +8,236 @@
 .intro {
   padding: 0 10%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
 
-  .tit-wr {
-    display: flex;
-    flex-direction: column;
-  }
+  .left {
+    width: 100%;
 
-  .hi {
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
-    @include hi;
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  }
-
-  .big-tit {
-    // color: $primary;
-    display: flex;
-    @include big-tit;
-    @keyframes dash {
-      0% {
-        transform: skew(-30deg, 0deg) translateX(300%) scale(0.8);
-        opacity: 1;
-      }
-
-      40% {
-        transform: skew(10deg, 0deg) translateX(100%) scale(0.9);
-      }
-
-      60% {
-        transform: skew(10deg, 0deg) translateX(-5px) scale(1);
-      }
-
-      100% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-      }
-    }
-
-    #inner-text {
-      position: relative;
-      z-index: 1;
-    }
-
-    #inner-text.done-animating {
-      animation: done-animating 100ms ease-in;
-    }
-
-    #text-spot {
+    .tit-wr {
       display: flex;
       flex-direction: column;
+    }
+
+    .hi {
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+      @include hi;
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+
+    .big-tit {
+      // color: $primary;
+      display: flex;
+      @include big-tit;
+      @keyframes dash {
+        0% {
+          transform: skew(-30deg, 0deg) translateX(300%) scale(0.8);
+          opacity: 1;
+        }
+
+        40% {
+          transform: skew(10deg, 0deg) translateX(100%) scale(0.9);
+        }
+
+        60% {
+          transform: skew(10deg, 0deg) translateX(-5px) scale(1);
+        }
+
+        100% {
+          transform: translateY(0) scale(1);
+          opacity: 1;
+        }
+      }
+
+      #inner-text {
+        position: relative;
+        z-index: 1;
+      }
+
+      #inner-text.done-animating {
+        animation: done-animating 100ms ease-in;
+      }
+
+      #text-spot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .letter {
+        display: inline-block;
+        font-size: 140px;
+        letter-spacing: 5px;
+      }
+
+      .letter.animate {
+        animation: dash 300ms ease-in forwards;
+        opacity: 0;
+      }
+    }
+
+    .img-box {
+      display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
-    }
-
-    .letter {
-      display: inline-block;
-      font-size: 140px;
-      letter-spacing: 5px;
-    }
-
-    .letter.animate {
-      animation: dash 300ms ease-in forwards;
+      border: 1px solid rgb(0, 0, 0, 0.1);
+      border-radius: 50px;
+      width: 64px;
+      height: 64px;
+      background: $white;
       opacity: 0;
+      animation: appear 0.2s ease-in-out 1.1s forwards,
+        moveUpAndDown 0.5s ease-in-out 1.1s forwards;
+
+      @keyframes appear {
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes moveUpAndDown {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      img {
+        width: 40px;
+      }
+    }
+
+    .txt-wr {
+      display: flex;
+      margin-top: 80px;
+    }
+
+    .txt {
+      width: 450px;
+      opacity: 0;
+      animation: appear 0.2s ease-in-out 1.6s forwards;
+      @keyframes appear {
+        to {
+          opacity: 1;
+        }
+      }
+    }
+
+    .profile {
+      display: flex;
+      margin-left: 300px;
+      opacity: 0;
+      animation: appear 0.2s ease-in-out 2s forwards;
+      @keyframes appear {
+        to {
+          opacity: 1;
+        }
+      }
+    }
+
+    .name-wr {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    .call-wr {
+      margin-left: 64px;
+
+      .icon {
+        font-size: 32px;
+      }
+    }
+
+    .phone,
+    .email {
+      display: flex;
+      align-items: center;
+    }
+
+    .num,
+    .addr {
+      padding-left: 13px;
     }
   }
 
-  .img-box {
+  .right {
+    width: 5%;
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(0, 0, 0, 0.1);
-    border-radius: 50px;
-    width: 64px;
-    height: 64px;
-    background: $white;
-    opacity: 0;
-    animation: appear 0.2s ease-in-out 1.1s forwards,
-      moveUpAndDown 0.5s ease-in-out 1.1s forwards;
+    position: relative;
 
-    @keyframes appear {
-      to {
-        opacity: 1;
+    .arrow {
+      color: $primary;
+      position: absolute;
+      top: 48%;
+      transform: translateY(-50%);
+      right: 80px;
+      width: 65px;
+      opacity: 0;
+      animation: appear 0.2s ease-in-out 2.5s forwards;
+      @keyframes appear {
+        to {
+          opacity: 1;
+        }
+      }
+
+      .ar-ico {
+        transform: rotate(220deg);
+        transform-origin: center;
+        position: absolute;
+        top: -20px;
+        right: -10px;
+      }
+
+      .here {
+        @include schoolbell;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      span {
+        display: block;
       }
     }
-    @keyframes moveUpAndDown {
-      0% {
-        transform: translateY(0);
+
+    nav {
+      display: flex;
+      gap: 100px;
+      transform: rotate(90deg);
+      opacity: 0;
+      animation: appear 0.2s ease-in-out 2.3s forwards;
+      @keyframes appear {
+        to {
+          opacity: 1;
+        }
       }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
 
-    img {
-      width: 40px;
-    }
-  }
+      a {
+        transition: all 0.3s;
 
-  .txt-wr {
-    display: flex;
-    margin-top: 80px;
-  }
-
-  .txt {
-    width: 450px;
-    opacity: 0;
-    animation: appear 0.2s ease-in-out 1.6s forwards;
-    @keyframes appear {
-      to {
-        opacity: 1;
-      }
-    }
-  }
-
-  .profile {
-    display: flex;
-    margin-left: 300px;
-    opacity: 0;
-    animation: appear 0.2s ease-in-out 2s forwards;
-    @keyframes appear {
-      to {
-        opacity: 1;
-      }
-    }
-  }
-
-  .name-wr {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 5px;
-  }
-
-  .call-wr {
-    margin-left: 64px;
-
-    .icon {
-      font-size: 32px;
-    }
-  }
-
-  .phone,
-  .email {
-    display: flex;
-    align-items: center;
-  }
-
-  .num,
-  .addr {
-    padding-left: 13px;
-  }
-
-  nav {
-    @include posY;
-    right: -5%;
-    display: flex;
-    gap: 100px;
-    transform: rotate(90deg);
-    opacity: 0;
-    animation: appear 0.2s ease-in-out 2.3s forwards;
-    @keyframes appear {
-      to {
-        opacity: 1;
+        &:hover {
+          color: $primary;
+        }
       }
     }
   }

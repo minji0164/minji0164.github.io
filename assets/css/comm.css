@@ -21,6 +21,12 @@
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: "Schoolbell";
+  src: url(../fonts/Schoolbell-Regular.ttf) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 /* reset */
 body,
 div,
@@ -326,12 +332,17 @@ legend {
 .intro {
   padding: 0 10%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.intro .tit-wr {
+.intro .left {
+  width: 100%;
+}
+.intro .left .tit-wr {
   display: flex;
   flex-direction: column;
 }
-.intro .hi {
+.intro .left .hi {
   opacity: 0;
   animation: fadeIn 1.5s forwards;
   font-family: "Poppins";
@@ -345,7 +356,7 @@ legend {
     opacity: 1;
   }
 }
-.intro .big-tit {
+.intro .left .big-tit {
   display: flex;
   font-family: "Poppins";
   font-size: 140px;
@@ -366,30 +377,30 @@ legend {
     opacity: 1;
   }
 }
-.intro .big-tit #inner-text {
+.intro .left .big-tit #inner-text {
   position: relative;
   z-index: 1;
 }
-.intro .big-tit #inner-text.done-animating {
+.intro .left .big-tit #inner-text.done-animating {
   animation: done-animating 100ms ease-in;
 }
-.intro .big-tit #text-spot {
+.intro .left .big-tit #text-spot {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.intro .big-tit .letter {
+.intro .left .big-tit .letter {
   display: inline-block;
   font-size: 140px;
   letter-spacing: 5px;
 }
-.intro .big-tit .letter.animate {
+.intro .left .big-tit .letter.animate {
   animation: dash 300ms ease-in forwards;
   opacity: 0;
 }
-.intro .img-box {
+.intro .left .img-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -417,14 +428,14 @@ legend {
     transform: translateY(0);
   }
 }
-.intro .img-box img {
+.intro .left .img-box img {
   width: 40px;
 }
-.intro .txt-wr {
+.intro .left .txt-wr {
   display: flex;
   margin-top: 80px;
 }
-.intro .txt {
+.intro .left .txt {
   width: 450px;
   opacity: 0;
   animation: appear 0.2s ease-in-out 1.6s forwards;
@@ -434,7 +445,7 @@ legend {
     opacity: 1;
   }
 }
-.intro .profile {
+.intro .left .profile {
   display: flex;
   margin-left: 300px;
   opacity: 0;
@@ -445,32 +456,68 @@ legend {
     opacity: 1;
   }
 }
-.intro .name-wr {
+.intro .left .name-wr {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-top: 5px;
 }
-.intro .call-wr {
+.intro .left .call-wr {
   margin-left: 64px;
 }
-.intro .call-wr .icon {
+.intro .left .call-wr .icon {
   font-size: 32px;
 }
-.intro .phone,
-.intro .email {
+.intro .left .phone,
+.intro .left .email {
   display: flex;
   align-items: center;
 }
-.intro .num,
-.intro .addr {
+.intro .left .num,
+.intro .left .addr {
   padding-left: 13px;
 }
-.intro nav {
+.intro .right {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.intro .right .arrow {
+  color: #0066ff;
   position: absolute;
-  top: 50%;
+  top: 48%;
   transform: translateY(-50%);
-  right: -5%;
+  right: 80px;
+  width: 65px;
+  opacity: 0;
+  animation: appear 0.2s ease-in-out 2.5s forwards;
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+.intro .right .arrow .ar-ico {
+  transform: rotate(220deg);
+  transform-origin: center;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+}
+.intro .right .arrow .here {
+  font-family: "Schoolbell";
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro .right .arrow span {
+  display: block;
+}
+.intro .right nav {
   display: flex;
   gap: 100px;
   transform: rotate(90deg);
@@ -481,6 +528,12 @@ legend {
   to {
     opacity: 1;
   }
+}
+.intro .right nav a {
+  transition: all 0.3s;
+}
+.intro .right nav a:hover {
+  color: #0066ff;
 }
 
 .ng {
