@@ -324,8 +324,65 @@
     flex-direction: column;
     justify-content: center;
 
-    .more-exp {
+    .top {
       z-index: 100;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .mouse {
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      margin-right: 20px;
+      width: 54px;
+      height: 46px;
+      background: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .scroll-downs {
+        padding-top: 6px;
+        width: 34px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mousey {
+        padding: 8px 9px;
+        height: 14px;
+        border: 1.5px solid $txtDefult-b;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+      }
+      .scroller {
+        width: 3px;
+        height: 6px;
+        border-radius: 25%;
+        background-color: $txtDefult-b;
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+        animation-iteration-count: infinite;
+      }
+      @keyframes scroll {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(4px);
+          opacity: 0;
+        }
+      }
+    }
+
+    .more-exp {
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
       margin-left: 20px;
