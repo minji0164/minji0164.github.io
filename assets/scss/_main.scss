@@ -247,6 +247,8 @@
   background: url("../../images/main/national.jpg") 50% 40% / 100% no-repeat;
 
   .bg {
+    display: flex;
+    justify-content: space-between;
     height: 100%;
     background-color: rgba(255, 204, 0, 0.8);
     background-image: linear-gradient(
@@ -262,58 +264,107 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
 
-  .txt-wr {
-    .type {
-      margin-bottom: 5px;
+    .txt-wr {
+      .type {
+        margin-bottom: 5px;
+      }
+
+      .num {
+        font-weight: 700;
+      }
+      .txt {
+        padding-left: 18px;
+      }
+
+      .name {
+        @include name;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      .exp {
+        margin-bottom: 30px;
+        width: 350px;
+      }
+
+      .bold {
+        width: 80px;
+        display: inline-block;
+      }
     }
 
-    .num {
-      font-weight: 700;
-    }
-    .txt {
-      padding-left: 18px;
-    }
-
-    .name {
-      @include name;
-      margin-bottom: 20px;
-      display: block;
-    }
-
-    .exp {
-      margin-bottom: 30px;
-      width: 350px;
-    }
-
-    .bold {
-      width: 80px;
-      display: inline-block;
-    }
-  }
-
-  .goto-wr {
-    margin-top: 138px;
-    gap: 20px;
-    display: flex;
-
-    a {
-      width: 60px;
-      height: 60px;
-      background: $white;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
+    .goto-wr {
+      margin-top: 138px;
+      gap: 20px;
       display: flex;
-      align-items: center;
+
+      a {
+        width: 60px;
+        height: 60px;
+        background: $white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      // .icon {
+      //   font-weight: 700;
+      // }
+      .fa-brands {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .more-exp {
+      z-index: 100;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      margin-left: 20px;
+      width: 270px;
+      height: 46px;
+      background: $white;
+      display: flex;
       justify-content: center;
+      align-items: center;
     }
 
-    // .icon {
-    //   font-weight: 700;
-    // }
-    .fa-brands {
-      font-size: 24px;
+    .txt {
+      font-size: 16px;
+    }
+
+    .pc-box {
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+      width: 850px;
+      height: 570px;
+      border: 8px solid $white; /* Assuming $white is #fff */
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .iframe-container {
+      width: 100%;
+      height: 100%;
+      transform: scale(0.5); /* Adjust the scale as needed */
+      transform-origin: top left; /* Set the origin point for scaling */
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    iframe {
+      width: 1700px; /* 850px * 2 */
+      height: 1140px; /* 570px * 2 */
+      border: none; /* Optional: to remove iframe border */
     }
   }
 }
