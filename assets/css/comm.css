@@ -288,6 +288,10 @@ legend {
   content: "";
 }
 
+body {
+  background: #f2f2f2;
+}
+
 .wrap {
   display: flex;
   flex-direction: column;
@@ -295,6 +299,13 @@ legend {
   max-width: none;
   margin: 0 auto;
   background: #f2f2f2;
+  min-width: 1440px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ::-moz-selection {
@@ -327,10 +338,11 @@ legend {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  width: 100%;
 }
 
 .intro {
-  padding: 0 10%;
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -357,6 +369,7 @@ legend {
   }
 }
 .intro .left .big-tit {
+  position: relative;
   display: flex;
   font-family: "Poppins";
   font-size: 140px;
@@ -401,13 +414,15 @@ legend {
   opacity: 0;
 }
 .intro .left .img-box {
+  position: absolute;
+  top: 73px;
+  left: 443px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   background: #fff;
   opacity: 0;
   animation: appear 0.2s ease-in-out 1.1s forwards, moveUpAndDown 0.5s ease-in-out 1.1s forwards;
@@ -422,18 +437,18 @@ legend {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-3px);
   }
   100% {
     transform: translateY(0);
   }
 }
 .intro .left .img-box img {
-  width: 40px;
+  width: 35px;
 }
 .intro .left .txt-wr {
-  display: flex;
   margin-top: 80px;
+  display: flex;
 }
 .intro .left .txt {
   width: 450px;
@@ -531,6 +546,7 @@ legend {
 }
 .intro .right nav a {
   transition: all 0.3s;
+  font-size: 20px;
 }
 .intro .right nav a:hover {
   color: #0066ff;
@@ -541,17 +557,27 @@ legend {
 }
 .ng .bg {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   background-color: rgba(255, 204, 0, 0.8);
-  background-image: linear-gradient(to right, rgb(255, 204, 0), rgba(0, 0, 0, 0));
-  padding: 0 10%;
+  background-image: linear-gradient(to right, rgba(255, 204, 0, 0.5), rgba(255, 204, 0, 0.5));
+}
+.ng .max-w {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 .ng .left {
-  height: 100%;
+  padding: 60px 45px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background: #fff;
 }
 .ng .left .txt-wr .type {
   margin-bottom: 5px;
@@ -570,7 +596,7 @@ legend {
   display: block;
 }
 .ng .left .txt-wr .exp {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 350px;
 }
 .ng .left .txt-wr .bold {
@@ -583,48 +609,51 @@ legend {
   display: flex;
 }
 .ng .left .goto-wr a {
-  width: 60px;
-  height: 60px;
+  padding: 14px 18px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  border-radius: 10px;
+  transition: all 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.ng .left .goto-wr .fa-brands {
-  font-size: 24px;
+.ng .left .goto-wr a:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.ng .left .goto-wr .txt {
+  font-size: 16px;
 }
 .ng .right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 .ng .right .top {
+  height: 63px;
   z-index: 100;
   display: flex;
   justify-content: space-between;
 }
-.ng .right .mouse {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  margin-right: 20px;
+.ng .right .more-left {
+  height: 100%;
+  display: flex;
+}
+.ng .right .more-left .mouse {
+  border-radius: 20px;
   width: 54px;
-  height: 46px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ng .right .mouse .scroll-downs {
-  padding-top: 6px;
+.ng .right .more-left .mouse .scroll-downs {
   width: 34px;
-  height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ng .right .mouse .mousey {
+.ng .right .more-left .mouse .mousey {
   padding: 8px 9px;
   height: 14px;
   border: 1.5px solid #0e0e0e;
@@ -632,13 +661,13 @@ legend {
   opacity: 0.75;
   box-sizing: content-box;
 }
-.ng .right .mouse .scroller {
+.ng .right .more-left .mouse .scroller {
   width: 3px;
   height: 6px;
   border-radius: 25%;
   background-color: #0e0e0e;
   animation-name: scroll;
-  animation-duration: 2.2s;
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
@@ -655,23 +684,38 @@ legend {
     opacity: 0;
   }
 }
-.ng .right .more-exp {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  margin-left: 20px;
+.ng .right .more-left .more-exp {
+  margin-left: 10px;
+  border-radius: 20px;
   width: 270px;
-  height: 46px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ng .right .txt {
+.ng .right .more-left .txt {
   font-size: 16px;
 }
+.ng .right .icon-right {
+  height: 100%;
+  display: flex;
+}
+.ng .right .icon-right .box {
+  margin-left: 10px;
+  height: 100%;
+  width: 54px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ng .right .icon-right .icon {
+  font-size: 26px;
+  color: #357e1b;
+}
 .ng .right .pc-box {
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
-  width: 850px;
+  width: 970px; /* Updated width */
   height: 570px;
   border: 8px solid #fff; /* Assuming $white is #fff */
   border-radius: 20px;
@@ -681,14 +725,14 @@ legend {
 .ng .right .iframe-container {
   width: 100%;
   height: 100%;
-  transform: scale(0.5); /* Adjust the scale as needed */
+  transform: scale(0.5); /* Adjusted scale based on new width (850 / 970) */
   transform-origin: top left; /* Set the origin point for scaling */
   position: absolute;
   top: 0;
   left: 0;
 }
 .ng .right iframe {
-  width: 1700px; /* 850px * 2 */
+  width: 1940px; /* 970px * 2 */
   height: 1140px; /* 570px * 2 */
   border: none; /* Optional: to remove iframe border */
 }/*# sourceMappingURL=comm.css.map */
