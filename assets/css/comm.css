@@ -571,11 +571,12 @@ main {
   flex-direction: row-reverse;
 }
 .ng .left {
+  height: 645px;
   padding: 60px 45px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: #fff;
 }
@@ -630,7 +631,7 @@ main {
   justify-content: space-between;
 }
 .ng .right .top {
-  height: 63px;
+  height: 55px;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -701,7 +702,6 @@ main {
   display: flex;
 }
 .ng .right .icon-right .box {
-  margin-left: 10px;
   height: 100%;
   width: 54px;
   border-radius: 20px;
@@ -710,14 +710,17 @@ main {
   justify-content: center;
   align-items: center;
 }
+.ng .right .icon-right .box:nth-child(2), .ng .right .icon-right .box:nth-child(3) {
+  margin-left: 10px;
+}
 .ng .right .icon-right .icon {
-  font-size: 26px;
-  color: #357e1b;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.7);
 }
 .ng .right .pc-box {
   width: 970px; /* Updated width */
   height: 570px;
-  border: 8px solid #fff; /* Assuming $white is #fff */
+  border: 6px solid #fff; /* Assuming $white is #fff */
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -735,4 +738,44 @@ main {
   width: 1940px; /* 970px * 2 */
   height: 1140px; /* 570px * 2 */
   border: none; /* Optional: to remove iframe border */
+}
+
+.mt {
+  background: url("../../images/main/meta.jpg") 50% 40%/100% no-repeat;
+}
+.mt .bg {
+  background-color: rgba(0, 129, 251, 0.8);
+  background-image: linear-gradient(to right, rgba(0, 129, 251, 0.3), rgba(0, 129, 251, 0.3));
+}
+.mt .max-w {
+  flex-direction: row;
+}
+.mt .right {
+  justify-content: flex-start;
+  position: relative;
+}
+.mt .right .top {
+  flex-direction: row-reverse;
+}
+.mt .right .pc-box {
+  margin-top: 15px;
+  width: 900px; /* Updated width */
+  height: 542px;
+}
+.mt .right .iframe-container {
+  transform: scale(0.465); /* Adjusted scale based on new width (850 / 970) */
+}
+.mt .right .mob-box {
+  width: 187px;
+  height: 332px;
+  z-index: 100;
+  bottom: 0;
+  left: -70px;
+  border-radius: 20px;
+  border: 4px solid #fff;
+  background: #000;
+  overflow: hidden;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }/*# sourceMappingURL=comm.css.map */
