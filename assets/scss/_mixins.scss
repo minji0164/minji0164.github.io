@@ -111,6 +111,11 @@
   font-size: 30px;
   font-weight: 700;
 }
+@mixin name2 {
+  font-family: "Pretendard";
+  font-size: 30px;
+  font-weight: 700;
+}
 @mixin schoolbell {
   font-family: "Schoolbell";
   font-size: 16px;
