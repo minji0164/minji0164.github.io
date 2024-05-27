@@ -778,4 +778,31 @@ main {
   position: absolute;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.knb {
+  background: url("../../images/main/knb.jpg") 50% 40%/100% no-repeat;
+}
+.knb .bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+.knb .left .txt-wr .name {
+  font-family: "Pretendard";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ori {
+  background: url("../../images/main/orion.jpg") 50% 40%/100% no-repeat;
+}
+.ori .bg {
+  background-color: rgba(227, 5, 18, 0.3);
+  background-image: linear-gradient(to right, rgba(227, 5, 18, 0.3), rgba(227, 5, 18, 0.3));
+}
+.ori .right .more-left {
+  flex-direction: row-reverse;
+}
+.ori .right .mouse {
+  margin-left: 10px;
 }/*# sourceMappingURL=comm.css.map */

@@ -522,3 +522,46 @@
     }
   }
 }
+
+.knb {
+  background: url("../../images/main/knb.jpg") 50% 40% / 100% no-repeat;
+
+  .bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .left {
+    .txt-wr {
+      .name {
+        @include name2;
+      }
+    }
+  }
+}
+
+.ori {
+  background: url("../../images/main/orion.jpg") 50% 40% / 100% no-repeat;
+
+  .bg {
+    background-color: rgba(227, 5, 18, 0.3);
+    background-image: linear-gradient(
+      to right,
+      rgba(227, 5, 18, 0.3),
+      rgba(227, 5, 18, 0.3)
+    );
+  }
+
+  .right {
+    .more-left {
+      flex-direction: row-reverse;
+    }
+    .mouse {
+      margin-left: 10px;
+    }
+  }
+}
