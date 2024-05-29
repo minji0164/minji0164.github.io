@@ -45,6 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  document.querySelectorAll(".mob-box").forEach(function (mobBox) {
+    const mobBoxInner = mobBox.querySelector(".mob-box-inner");
+
+    mobBox.addEventListener("mouseover", function () {
+      mobBoxInner.style.backgroundPosition = "bottom";
+    });
+
+    mobBox.addEventListener("mouseout", function () {
+      mobBoxInner.style.backgroundPosition = "top";
+    });
+  });
+
   // Initialize Splitting
   Splitting();
 });
