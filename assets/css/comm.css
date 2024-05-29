@@ -552,16 +552,11 @@ main {
   color: #0066ff;
 }
 
-.ng {
-  background: url("../../images/main/national.jpg") 50% 40%/100% no-repeat;
-}
 .ng .bg {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: rgba(255, 204, 0, 0.8);
-  background-image: linear-gradient(to right, rgba(255, 204, 0, 0.5), rgba(255, 204, 0, 0.5));
 }
 .ng .max-w {
   max-width: 1440px;
@@ -574,6 +569,7 @@ main {
   height: 645px;
   padding: 60px 45px;
   border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -643,6 +639,7 @@ main {
 .ng .right .more-left .mouse {
   border-radius: 20px;
   width: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
   display: flex;
   justify-content: center;
@@ -689,6 +686,7 @@ main {
   margin-left: 10px;
   border-radius: 20px;
   width: 270px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
   display: flex;
   justify-content: center;
@@ -705,6 +703,7 @@ main {
   height: 100%;
   width: 54px;
   border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
   display: flex;
   justify-content: center;
@@ -740,13 +739,6 @@ main {
   border: none; /* Optional: to remove iframe border */
 }
 
-.mt {
-  background: url("../../images/main/meta.jpg") 50% 40%/100% no-repeat;
-}
-.mt .bg {
-  background-color: rgba(0, 129, 251, 0.8);
-  background-image: linear-gradient(to right, rgba(0, 129, 251, 0.3), rgba(0, 129, 251, 0.3));
-}
 .mt .max-w {
   flex-direction: row;
 }
@@ -777,7 +769,6 @@ main {
   position: absolute;
   background-repeat: no-repeat;
   background-size: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   background-image: url(../../images/main/meta-mob.png);
 }
 .mt .right .mob-box-inner {
@@ -789,13 +780,6 @@ main {
   transition: background-position 3s linear; /* Adjust the duration as needed */
 }
 
-.knb {
-  background: url("../../images/main/knb.jpg") 50% 40%/100% no-repeat;
-}
-.knb .bg {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-}
 .knb .left .txt-wr .name {
   font-family: "Pretendard";
   font-size: 30px;
@@ -805,13 +789,6 @@ main {
   background-image: url(../../images/main/knb-mob.png);
 }
 
-.ori {
-  background: url("../../images/main/orion.jpg") 50% 40%/100% no-repeat;
-}
-.ori .bg {
-  background-color: rgba(227, 5, 18, 0.3);
-  background-image: linear-gradient(to right, rgba(227, 5, 18, 0.3), rgba(227, 5, 18, 0.3));
-}
 .ori .right .more-left {
   flex-direction: row-reverse;
 }
@@ -819,6 +796,5 @@ main {
   margin-left: 10px;
 }
 .ori .right .mob-box {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   background-image: url(../../images/main/orion-mob.png);
 }/*# sourceMappingURL=comm.css.map */

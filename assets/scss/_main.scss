@@ -249,19 +249,19 @@
 }
 
 .ng {
-  background: url("../../images/main/national.jpg") 50% 40% / 100% no-repeat;
+  // background: url("../../images/main/national.jpg") 50% 40% / 100% no-repeat;
 
   .bg {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: rgba(255, 204, 0, 0.8);
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 204, 0, 0.5),
-      rgba(255, 204, 0, 0.5)
-    );
+    // background-color: rgba(255, 204, 0, 0.5);
+    // background-image: linear-gradient(
+    //   to right,
+    //   rgba(255, 204, 0, 0.5),
+    //   rgba(255, 204, 0, 0.5)
+    // );
   }
 
   .max-w {
@@ -278,6 +278,7 @@
     border-radius: 20px;
     // width: 440px;
     // height: 640px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -358,6 +359,7 @@
       .mouse {
         border-radius: 20px;
         width: 54px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         background: $white;
         display: flex;
         justify-content: center;
@@ -406,6 +408,7 @@
         margin-left: 10px;
         border-radius: 20px;
         width: 270px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         background: $white;
         display: flex;
         justify-content: center;
@@ -425,6 +428,7 @@
         height: 100%;
         width: 54px;
         border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         background: $white;
         display: flex;
         justify-content: center;
@@ -441,6 +445,11 @@
         color: $ng-icon;
       }
     }
+
+    // .bd {
+    //   border-radius: 20px;
+    //   border: 1px solid rgba(0, 0, 0, 0.1);
+    // }
 
     .pc-box {
       // box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
@@ -471,16 +480,16 @@
 }
 
 .mt {
-  background: url("../../images/main/meta.jpg") 50% 40% / 100% no-repeat;
+  // background: url("../../images/main/meta.jpg") 50% 40% / 100% no-repeat;
 
-  .bg {
-    background-color: rgba(0, 129, 251, 0.8);
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 129, 251, 0.3),
-      rgba(0, 129, 251, 0.3)
-    );
-  }
+  // .bg {
+  //   background-color: rgba(0, 129, 251, 0.8);
+  //   background-image: linear-gradient(
+  //     to right,
+  //     rgba(0, 129, 251, 0.3),
+  //     rgba(0, 129, 251, 0.3)
+  //   );
+  // }
 
   .max-w {
     flex-direction: row;
@@ -518,7 +527,7 @@
       position: absolute;
       background-repeat: no-repeat;
       background-size: 100%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       background-image: url(../../images/main/meta-mob.png);
     }
     .mob-box-inner {
@@ -533,16 +542,16 @@
 }
 
 .knb {
-  background: url("../../images/main/knb.jpg") 50% 40% / 100% no-repeat;
+  // background: url("../../images/main/knb.jpg") 50% 40% / 100% no-repeat;
 
-  .bg {
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0)
-    );
-  }
+  // .bg {
+  //   background-color: rgba(0, 0, 0, 0.5);
+  //   background-image: linear-gradient(
+  //     to right,
+  //     rgba(0, 0, 0, 1),
+  //     rgba(0, 0, 0, 0)
+  //   );
+  // }
 
   .left {
     .txt-wr {
@@ -560,16 +569,17 @@
 }
 
 .ori {
-  background: url("../../images/main/orion.jpg") 50% 40% / 100% no-repeat;
+  // background: url("../../images/main/jeff-siepman-7cRBG4nQtKs-unsplash.blur.png")
+  //   50% 40% / 100% no-repeat;
 
-  .bg {
-    background-color: rgba(227, 5, 18, 0.3);
-    background-image: linear-gradient(
-      to right,
-      rgba(227, 5, 18, 0.3),
-      rgba(227, 5, 18, 0.3)
-    );
-  }
+  // .bg {
+  //   background-color: rgba(227, 5, 18, 0.3);
+  //   background-image: linear-gradient(
+  //     to right,
+  //     rgba(227, 5, 18, 0.3),
+  //     rgba(227, 5, 18, 0.3)
+  //   );
+  // }
 
   .right {
     .more-left {
@@ -579,7 +589,7 @@
       margin-left: 10px;
     }
     .mob-box {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      // box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
       background-image: url(../../images/main/orion-mob.png);
     }
   }
