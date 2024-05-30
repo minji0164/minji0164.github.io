@@ -41,6 +41,36 @@ main {
 // #main {
 //   padding: 0 5%;
 // }
+.back_to_top {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  line-height: 30px;
+  border-radius: 50px;
+  border: 1px solid $white;
+  background: $primary;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s;
+
+  .icon {
+    font-size: 20px;
+    color: $white;
+    @include posXY;
+  }
+}
+
+.back_to_top:hover {
+  background: rgba(0, 102, 255, 0.7);
+}
+
+.back_to_top-show {
+  display: block;
+}
 //---------------------------------------------------------------------------------
 @import "main";
 // 우선순위로 먹혀야 하기 때문에 밑으로 들어감

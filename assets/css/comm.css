@@ -333,6 +333,39 @@ main {
   }
 }
 
+.back_to_top {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  line-height: 30px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background: #0066ff;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s;
+}
+.back_to_top .icon {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back_to_top:hover {
+  background: rgba(0, 102, 255, 0.7);
+}
+
+.back_to_top-show {
+  display: block;
+}
+
 .sec {
   display: flex;
   flex-direction: column;
