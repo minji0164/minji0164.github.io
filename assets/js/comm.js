@@ -57,6 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  AOS.init({
+    duration: 500,
+  });
+
   // Initialize Splitting
   Splitting();
 });
