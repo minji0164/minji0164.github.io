@@ -343,7 +343,7 @@ main {
   line-height: 30px;
   border-radius: 50px;
   border: 1px solid #fff;
-  background: #0066ff;
+  background: rgba(0, 102, 255, 0.7);
   text-align: center;
   cursor: pointer;
   display: none;
@@ -359,7 +359,7 @@ main {
 }
 
 .back_to_top:hover {
-  background: rgba(0, 102, 255, 0.7);
+  background: #0066ff;
 }
 
 .back_to_top-show {
