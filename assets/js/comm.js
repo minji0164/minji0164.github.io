@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  //backToTop---------------------------------------------------
   (function () {
     "use strict";
 
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function backToTop() {
       if (window.pageYOffset > 0) {
-        window.scrollBy(0, -60);
+        window.scrollBy(0, -100);
         setTimeout(backToTop, 10);
       }
     }
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     goTopBtn.addEventListener("click", backToTop);
   })();
 
+  //intro animation---------------------------------------------------
   function drawText(word) {
     word = word || "WELCOME!";
     var wordArray = word.split("");
@@ -58,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   drawText();
 
-  // Smooth scroll functionality for navigation links
+  // Smooth scroll functionality for navigation links---------------------
   document.querySelectorAll("nav a").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -73,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  //mob-box auto scroll---------------------------------------------------
   document.querySelectorAll(".mob-box").forEach(function (mobBox) {
     const mobBoxInner = mobBox.querySelector(".mob-box-inner");
 
@@ -85,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  //easy chart---------------------------------------------------
   const observerOptions = {
     root: null,
     rootMargin: "0px",
@@ -113,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(chart);
   });
 
+  //animation circle text---------------------------------------------------
   const text = document.querySelector(".text");
   text.innerHTML = text.innerText
     .split("")
@@ -121,9 +126,34 @@ document.addEventListener("DOMContentLoaded", function () {
     )
     .join("");
 
+  //aos---------------------------------------------------
   AOS.init({
     duration: 500,
   });
+
+  //미모티콘 버튼---------------------------------------------------
+  const btnWr = document.querySelector(".btn-wr");
+  const introduce = document.querySelector(".introduce");
+  const cirBtn = document.querySelector(".cir");
+
+  btnWr.addEventListener("click", toggleIntroduce);
+  cirBtn.addEventListener("click", hideIntroduce);
+
+  // .introduce 요소의 초기 상태를 설정
+  introduce.style.opacity = 0;
+
+  // .introduce 요소의 오퍼시티를 토글하는 함수입니다.
+  function toggleIntroduce() {
+    if (introduce.style.opacity === "0") {
+      introduce.style.opacity = 1;
+    } else {
+      introduce.style.opacity = 0;
+    }
+  }
+
+  function hideIntroduce() {
+    introduce.style.opacity = 0;
+  }
 
   // Initialize Splitting
   Splitting();
