@@ -85,6 +85,34 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        $(entry.target).easyPieChart({
+          scaleColor: "#fff",
+          lineWidth: 10,
+          lineCap: "butt",
+          barColor: "rgba(0, 0, 0, 0.3)",
+          trackColor: "#ecf0f1",
+          size: 90,
+          animate: 1000,
+        });
+        $(entry.target).removeClass("hidden");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll(".chart").forEach((chart) => {
+    observer.observe(chart);
+  });
+
   AOS.init({
     duration: 500,
   });

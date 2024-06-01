@@ -606,3 +606,160 @@
     }
   }
 }
+
+.skill {
+  max-width: 1440px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .tit {
+      @include bold46;
+    }
+    .txt {
+      margin-top: 15px;
+      span {
+        display: block;
+      }
+    }
+
+    .sub-sk {
+      gap: 15px;
+      display: flex;
+    }
+
+    .chart-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .chart-bg {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .chart {
+      position: relative;
+      top: 0;
+      display: inline-block;
+      margin: 20px 10px;
+      color: $txtDefult-b;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .chart canvas {
+      @include posXY;
+    }
+
+    .name {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+  }
+
+  .bottom {
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .chart-box {
+      width: 388px;
+      height: 363px;
+      position: relative;
+    }
+
+    .sub-cir {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      font-size: 16px;
+      background: $white;
+      position: relative;
+
+      .txt-wr {
+        top: 40px;
+        left: 30px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+      }
+      .name {
+        color: rgba(0, 0, 0, 0.4);
+      }
+      .num {
+        font-weight: 700;
+      }
+    }
+
+    .main-cir {
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      top: 33px;
+      left: 58px;
+      position: absolute;
+      background: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .line-cir {
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      border: 1px solid $primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .chart {
+      position: relative;
+      color: $txtDefult-b;
+      text-align: center;
+      @include bold30;
+    }
+
+    .chart canvas {
+      @include posXY;
+    }
+
+    .txt-wr2 {
+      margin-top: 25px;
+      width: 388px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .name {
+        font-size: 26px;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .txt {
+        margin-top: 5px;
+        color: rgba(0, 0, 0, 0.4);
+      }
+
+      .sub-txt {
+        color: $primary;
+      }
+    }
+  }
+}

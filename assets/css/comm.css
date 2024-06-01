@@ -845,4 +845,150 @@ main {
 }
 .ori .right .mob-box {
   background-image: url(../../images/main/orion-mob.png);
+}
+
+.skill {
+  max-width: 1440px;
+}
+.skill .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill .top .tit {
+  font-family: "Poppins";
+  font-size: 46px;
+  font-weight: 700;
+}
+.skill .top .txt {
+  margin-top: 15px;
+}
+.skill .top .txt span {
+  display: block;
+}
+.skill .top .sub-sk {
+  gap: 15px;
+  display: flex;
+}
+.skill .top .chart-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill .top .chart-bg {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill .top .chart {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  margin: 20px 10px;
+  color: #0e0e0e;
+  font-size: 14px;
+  text-align: center;
+}
+.skill .top .chart canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skill .top .name {
+  margin-top: 5px;
+  font-size: 16px;
+}
+.skill .bottom {
+  margin-top: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.skill .bottom .chart-box {
+  width: 388px;
+  height: 363px;
+  position: relative;
+}
+.skill .bottom .sub-cir {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  font-size: 16px;
+  background: #fff;
+  position: relative;
+}
+.skill .bottom .sub-cir .txt-wr {
+  top: 40px;
+  left: 30px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.skill .bottom .sub-cir .name {
+  color: rgba(0, 0, 0, 0.4);
+}
+.skill .bottom .sub-cir .num {
+  font-weight: 700;
+}
+.skill .bottom .main-cir {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  top: 33px;
+  left: 58px;
+  position: absolute;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill .bottom .line-cir {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  border: 1px solid #0066ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill .bottom .chart {
+  position: relative;
+  color: #0e0e0e;
+  text-align: center;
+  font-family: "Pretendard";
+  font-size: 30px;
+  font-weight: 700;
+}
+.skill .bottom .chart canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skill .bottom .txt-wr2 {
+  margin-top: 25px;
+  width: 388px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill .bottom .txt-wr2 .name {
+  font-size: 26px;
+}
+.skill .bottom .txt-wr2 .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill .bottom .txt-wr2 .txt {
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.skill .bottom .txt-wr2 .sub-txt {
+  color: #0066ff;
 }/*# sourceMappingURL=comm.css.map */
