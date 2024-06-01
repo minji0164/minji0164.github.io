@@ -991,4 +991,65 @@ main {
 }
 .skill .bottom .txt-wr2 .sub-txt {
   color: #0066ff;
+}
+
+.contact {
+  max-width: 1440px;
+}
+.contact .tit {
+  font-family: "Poppins";
+  font-size: 140px;
+  font-weight: 700;
+}
+.contact .circle {
+  margin-top: 24px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100vmax;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .mail {
+  width: 140px;
+  height: 140px;
+  border-radius: 100vmax;
+  z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  background: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact .mail:hover {
+  background: #0066ff;
+  color: #fff;
+}
+.contact .mail .icon {
+  font-size: 42px;
+}
+.contact .mail .txt {
+  margin-top: 3px;
+  font-size: 16px;
+}
+.contact .text {
+  width: 100%;
+  height: 100%;
+  animation: textRotation 8s linear infinite;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.4);
+}
+@keyframes textRotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.contact .text span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0 100px;
 }/*# sourceMappingURL=comm.css.map */

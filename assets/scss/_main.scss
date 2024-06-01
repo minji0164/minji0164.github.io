@@ -694,7 +694,7 @@
         flex-direction: column;
       }
       .name {
-        color: rgba(0, 0, 0, 0.4);
+        color: $gray3;
       }
       .num {
         font-weight: 700;
@@ -754,12 +754,79 @@
 
       .txt {
         margin-top: 5px;
-        color: rgba(0, 0, 0, 0.4);
+        color: $gray3;
       }
 
       .sub-txt {
         color: $primary;
       }
     }
+  }
+}
+
+.contact {
+  max-width: 1440px;
+
+  .tit {
+    @include bold140;
+  }
+
+  .circle {
+    margin-top: 24px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100vmax;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mail {
+    width: 140px;
+    height: 140px;
+    border-radius: 100vmax;
+    z-index: 1000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    background: $white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+
+    .icon {
+      font-size: 42px;
+    }
+    .txt {
+      margin-top: 3px;
+      font-size: 16px;
+    }
+  }
+
+  .text {
+    width: 100%;
+    height: 100%;
+    animation: textRotation 8s linear infinite;
+    position: absolute;
+    color: $gray3;
+  }
+
+  @keyframes textRotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .text span {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 100px;
   }
 }
